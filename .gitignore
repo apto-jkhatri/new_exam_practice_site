@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build*/
+*dist*/
+*.egg-info/
+*.spec
+
+# Virtual environment
+.env
+.venv
+venv/
+ENV/
+env/
+env.bak
+venv.bak
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.DS_Store
+
+# Streamlit
+# No specific Streamlit files usually need to be ignored if they are generated runtime,
+# but if you have local session state files you don't want to commit:
+# .streamlit/session_state.db # (Example, if Streamlit ever uses such a file locally)
+
+# Other
+dbt_docs_local_raw_text.json # The raw scraped text cache, not needed for deployed app
+dbt_docs_raw_text.json
+# If your local_vectorizer.py used an .env for OpenAI key for embeddings:
+# data_ingestion/.env

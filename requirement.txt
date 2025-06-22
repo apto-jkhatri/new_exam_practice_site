@@ -1,0 +1,18 @@
+streamlit
+groq
+langchain
+langchain-huggingface
+langchain-community 
+faiss-cpu
+sentence-transformers
+beautifulsoup4
+requests
+python-dotenv # Good for local development, Streamlit Cloud uses its own secrets
+tiktoken # Often a dependency for Langchain, especially with token counting
+
+# Ensure specific versions if you encounter compatibility issues during deployment, e.g.:
+# streamlit==1.30.0
+# groq==0.5.0
+# langchain==0.1.0
+# sentence-transformers==2.2.2
+# faiss-cpu==1.7.4
